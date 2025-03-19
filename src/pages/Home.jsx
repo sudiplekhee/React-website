@@ -1,7 +1,21 @@
+import { hydrateRoot } from "react-dom/client"
+import Navbar from "../components/Navbar"
+
+
+import Contact from "./Contact"
+import Section from "../components/section"
+import Service from "./service"
+import About from "./About"
+
 function Home(){
     return(
 <>
-<p class="text-blue-500">This text will be blue</p>
+<Navbar/>
+<Section/>
+<Service/>
+<About/>
+<Contact/>
+
 </>
     )
 }
