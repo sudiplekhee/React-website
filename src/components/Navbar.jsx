@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import Section from "./section"
+import Section from "./card"
 
 
 function Navbar(){
@@ -7,7 +7,7 @@ function Navbar(){
 <>
 
 {/* Header Section */}
-<header className="bg-blue-900 text-white">
+<header className="bg-indigo-900 text-white">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
     <div className="flex items-center justify-between">
       {/* Logo Section */}
@@ -16,11 +16,12 @@ function Navbar(){
       </div>
       {/* Navigation Menu */}
       <nav className="hidden md:flex space-x-10 text-lg">
-        <Link to="/" className="hover:text-gray-300 transition-all">Home</Link>
-        <Link to="/service" className="hover:text-gray-300 transition-all">Services</Link>
-        <Link to="/about" className="hover:text-gray-300 transition-all">About Us</Link>
-        <Link to="/contact" className="hover:text-gray-300 transition-all">Contact</Link>
-      </nav>
+  <Link to="/" className="hover:text-gray-300 transition-all">Home</Link>
+  <Link to="/service" className="hover:text-gray-300 transition-all">Services</Link>
+  <Link to="/about" className="hover:text-gray-300 transition-all">About Us</Link>
+  <Link to="/contact" className="hover:text-gray-300 transition-all">Contact</Link>
+  <Link to="/signup" className="hover:text-gray-300 transition-all">Sign Up</Link>
+</nav>
       {/* Call-to-Action Button */}
       <div className="hidden md:block">
         <a href="#contact" className="bg-yellow-500 hover:bg-yellow-400 text-black py-2 px-6 rounded-full text-lg transition-all">
